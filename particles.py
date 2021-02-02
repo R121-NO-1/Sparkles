@@ -55,5 +55,6 @@ if __name__ == "__main__":
             particle.move(time_passed)
             particle.draw(screen)
             if particle.position.y > SCREEN_Y:
+                # Kanskje dette ikke er så lurt?
                 particles.remove(particle)
         pygame.display.update()
